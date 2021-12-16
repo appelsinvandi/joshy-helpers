@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const sizeOf = require('image-size')
 
-const rootFolder = path.resolve(__dirname, '../fileDimensionsCheckerInput')
+const inputFolder = path.resolve(__dirname, '..', 'inputs', 'fileDimensionsChecker')
 
 function checkPngsDeep(folder) {
   const files = fs.readdirSync(folder)
@@ -19,4 +19,4 @@ function checkPngsDeep(folder) {
   })
 }
 
-checkPngsDeep(rootFolder)
+checkPngsDeep(inputFolder)
