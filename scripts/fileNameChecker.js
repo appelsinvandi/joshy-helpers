@@ -5,7 +5,7 @@ const inputFolder = path.resolve(__dirname, '..', 'inputs', 'fileNameChecker')
 const pngs = discoverAllPngsDeep(inputFolder).sort((a, b) => a.localeCompare(b))
 
 for (const png of pngs) {
-  if (!/^[a-zA-Z ]+#\d+\.png$/.test(path.basename(png))) {
+  if (!/^[0-9a-zA-Z ]+#\d+\.png$/.test(path.basename(png))) {
     console.log(`${png} has wrong file name`)
   }
 }
