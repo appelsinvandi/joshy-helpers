@@ -1,11 +1,11 @@
 const fs = require('fs')
 const path = require('path')
 
-const inputFolder = path.resolve(__dirname, '..', 'inputs', 'nftFileNameChecker')
+const inputFolder = path.resolve(__dirname, '..', 'inputs', 'fileNameChecker')
 const pngs = discoverAllPngsDeep(inputFolder).sort((a, b) => a.localeCompare(b))
 
 for (const png of pngs) {
-  if (!/[a-zA-Z ]+#\d+\.png$/.test(path.basename(png))) {
+  if (!/^[a-zA-Z ]+#\d+\.png$/.test(path.basename(png))) {
     console.log(`${png} has wrong file name`)
   }
 }

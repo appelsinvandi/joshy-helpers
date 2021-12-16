@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "fileDimensionsChecker": "node ./scripts/fileDimensionsChecker.js",
-    "fileNameChecker": "node ./scripts/fileNameChecker.js"
+    "fileNameChecker": "node ./scripts/fileNameChecker.js",
+    "hashlipsMetadataChecker": "node ./scripts/hashlipsMetadataChecker.js"
   },
   "dependencies": {
     "image-size": "^1.0.0"
