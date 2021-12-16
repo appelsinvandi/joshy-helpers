@@ -1,10 +1,10 @@
 {
   "name": "joshy-helper",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "fileDimensionsChecker": "node ./scripts/fileDimensionsChecker.js"
+    "fileDimensionsChecker": "node ./scripts/fileDimensionsChecker.js",
+    "fileNameChecker": "node ./scripts/fileNameChecker.js"
   },
   "dependencies": {
     "image-size": "^1.0.0"
