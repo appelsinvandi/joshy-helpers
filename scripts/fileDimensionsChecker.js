@@ -13,7 +13,7 @@ function checkPngsDeep(folder) {
     } else if (path.extname(file) === '.png') {
       const dimensions = sizeOf(filePath)
       if (dimensions.width !== 2070 || dimensions.height !== 2070) {
-        console.log(`${file} has wrong dimensions: ${dimensions.width}x${dimensions.height}`)
+        console.log(`${filePath} has wrong dimensions: ${dimensions.width}x${dimensions.height}`)
       }
     }
   })
