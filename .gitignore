@@ -1,0 +1,4 @@
+node_modules/
+
+fileDimensionsCheckerInput/*
+!fileDimensionsCheckerInput/.gitkeep
