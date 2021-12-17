@@ -5,6 +5,7 @@
   "scripts": {
     "fileDimensionsChecker": "node ./scripts/fileDimensionsChecker.js",
     "fileNameChecker": "node ./scripts/fileNameChecker.js",
+    "formatAddresses": "node ./scripts/formatAddresses.js",
     "hashlipsMetadataChecker": "node ./scripts/hashlipsMetadataChecker.js"
   },
   "dependencies": {
